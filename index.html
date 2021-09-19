@@ -3,36 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <title>Задание 2</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="https://sun9-12.userapi.com/impg/RZbiVe5qPtmAcI-5x_4efZtrsOyG6wAfpoTvcw/cspIeeu5R-I.jpg?size=1000x1000&quality=96&sign=1ec3e95e8441c9e62bbccd5d1e07a7ce&type=album" type="image/png">
 </head>
 <body>
     <header>
 		<div id="header">
-			
 			<img id="logo" src="https://sun9-12.userapi.com/impg/RZbiVe5qPtmAcI-5x_4efZtrsOyG6wAfpoTvcw/cspIeeu5R-I.jpg?size=1000x1000&quality=96&sign=1ec3e95e8441c9e62bbccd5d1e07a7ce&type=album"  alt="logo">
 			<h2 class="name">Задание 2 </h2>
 		</div>
 	</header>
 <main>
 	<nav class = "nav">
-            <a href="#list">Список ссылок</a> | <a href="#form">Форма</a> |
-            <a href="#table">Таблица</a>
+            <a href="#list">Список ссылок</a> |
+             <a href="#table">Таблица</a> |
+            <a href="#form">Форма</a>
     </nav>
 
     <div id="list">
-
+        <ol>
+            <li>Абсолютная гиперссылка на главную страницу<a href="https://yandex.ru/" id="#anchor1"> сайта</a></li>
+            <li>Абсолютная ссылка на главную в<a href="https://www.citilink.ru/"> протоколе https</a></li>
+            <li>Ссылка на файл на сервере FTP<a href="ftp://example.com/myfile.zip"> без авторизации</a></li>
+            <li><a href="ftp://user:password@example.com/myfile.zip">С авторизацией</a></li>
+            <li>Ссылка на фрагмент страницы некоторого
+                <a href="https://ru.wikipedia.org/wiki/Гитлер,_Адольф#Смерть"> сайта</a>
+            </li>
+            <li><a href="#anchor2">Cсылка на фрагмент текущей страницы</a></li>
+            <li>Cсылка с<a href="https:// example.com/catalog/phone7page=2&perpage=15"> двумя параметрами</a></li>
+            <li>
+                <ul>
+                    <li><a title="Тематика">Оглавление</a></li>
+                    <li><a href="#anchor1" title="Основная информация">Основной материал</a></li>
+                </ul>
+            </li>
+            <li><a>Ссылка без href</a></li>
+            <li><a href="">Ссылка с пустым href</a></li>
+            <li><a href="https://www.google.ru/" rel="nofollow">переход запрещен</a></li>
+            <li><a href="https://www.google.ru/" rel="noindex">Запрещенная для индексации поисковиками</a></li>
+            <li>
+                <p>
+                    К просмотру рекомендуется данная<a  id = "anchor2" href="https://www.google.ru/"> информация</a>
+                </p>
+            </li>
+            <li>
+                <a href="https://www.google.ru/">
+                <img src="https://i.playground.ru/p/TkPZZS4ttok6gOrfTasv2w.jpeg" width="240" height="100" alt="">
+                </a>
+            </li>
+            <li>
+            <map name = "click">
+            <area shape = "rect" coords="0,0,100,100" href="https://www.youtubekids.com/" title="Детский контент">
+        
+            <area shape = "rect" coords="180,40,80,80" href="https://www.youtube.com/results?search_query=майнкрафт" title="Взрослый контент">
+            </map>
+            <img alt="Кaртинка" src="https://1pskov.tv/files/0K33YPUC.jpg" width="200" height="80" usemap="#click">
+            </li>
+            <li><a href="./example.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+            <li><a href="./about/example.html">Относительная ссылка на страницу в каталоге about</a></li>
+            <li><a href="../example.html">Относительная на страницу в каталоге уровнем выше текущего</a></li>
+            <li><a href="../../example.html">Относительная на страницу в каталоге двумя уровнями выше текущего</a></li>
+            <li><a href="/">Сокращенная ссылка на главную</a></li>
+            <li><a href="/example.html">Сокращенная ссылка на внутреннюю</a></li>
+            </ol>
     </div>
 
     <div id = "table">
-
+        <h2>Таблица</h2>
+		<table>
+			<tr>
+				<th class="header_table" colspan="4">Заголовок таблицы</th>
+			</tr>
+				<td>11</td>
+				<td>12</td>
+				<td>13</td>
+				<td>14</td>
+			<tr>
+			</tr>
+				<td>21</td>
+				<td>22</td>
+				<td>23</td>
+				<td>24</td>
+			<tr>
+			</tr>
+				<td>31</td>
+				<td>32</td>
+				<td>33</td>
+				<td>34</td>
+			<tr>
+				<td>41</td>
+				<td>42</td>
+				<td>43</td>
+				<td>44</td>
+			</tr>
+			
+		</table>
     </div>
 
     <div id="form">
-
+        <h1>Форма</h1>
+        <form action="/" method="post">
+            <label>
+                Имя:
+                <br>
+                <input name="NAME" value="Введите ваше имя:">
+            </label>
+            <br>
+            <label>
+                E-mail:
+                <br>
+                <input name="MAIL" value="Введите вашу почту" type="email">
+            </label>
+            <br>
+            <label>
+                Дата рождения:
+                <br>
+                <input name="BDAY" type="date">
+            </label>
+            <br>
+            Пол:
+            <br>
+            <label>
+                <input type="radio" checked="checked" name="gender" value="1">
+                Мужчина
+            </label>
+            <label>
+                <input type="radio" name="gender" value="2">
+                Женщина
+            </label>
+            <br>
+            Количество конечностей:
+            <br>
+            <label>
+                <input type="radio" checked="checked" name="body" value="1">
+                0
+            </label>
+            <label>
+                <input type="radio" name="body" value="2">
+                1
+            </label>
+            <label>
+                <input type="radio" name="body" value="3">
+                2
+            </label>
+            <label>
+                <input type="radio" name="body" value="4">
+                3
+            </label>
+            <label>
+                <input type="radio" name="body" value="5">
+                4
+            </label>
+            <br>
+            <label>
+                Сверхспособности:
+                <br>
+                <select name="POWER" multiple="multiple">
+                    <option value="1">бессмертие</option>
+                    <option value="2">прохождение сквозь стены</option>
+                    <option value="3">левитация</option>
+                </select>
+            </label>
+            <br>
+            <label>
+                Биография:
+                <br>
+                <textarea name="BIOGRAPHY">Кратко опишите свою жизнь</textarea>
+            </label>
+            <br>
+            Соглашение пользователя:
+            <br>
+            <label>
+                <input type="checkbox" name="SOME_NAME">
+                Принимаю условия соглашения пользователя	
+            </label>
+            <br>
+            <input type="submit" value="Отправить">
+        </form>
     </div>
     <footer>
-        <font color = "red">Здесь могла бы быть ваша реклама!!!</font>
+        <font color = "#bbb81f">Здесь могла бы быть ваша реклама!!!</font>
     </footer>
 </main>
 </body>
