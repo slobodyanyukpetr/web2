@@ -7,7 +7,7 @@ header
   margin-left: -8px;
   margin-top: -8px;
   margin-bottom: 20px;
-  background-color: rgb(255, 255, 255);
+  background-color: #d4d4d4;
   border-bottom: 5px solid #585454;
   
 }
@@ -16,6 +16,7 @@ header
   float: left;
   height: 150px;
   width: 150px;
+  mix-blend-mode: multiply;
 }
 
 .name
