@@ -9,12 +9,11 @@ header
   margin-bottom: 20px;
   background-color: black;
   border-bottom: 5px solid #3B0101;
-  vertical-align: middle;
+  
 }
 
 #logo {
   float: left;
-  display: inline-block;
   height: 150px;
   width: 150px;
 }
@@ -24,7 +23,7 @@ header
     text-align: justify;
 	margin-top:  20px;
     font-family: Arial, Verdana,  sans-serif; 
-	color: #3B0101;
+	color: #bbb81f;
 	font-size: 40pt;
 }
 
@@ -48,7 +47,7 @@ main
 	max-width: 960px;
 	margin: 0 auto;
 	background-color: black;
-	color: red;
+	color: #bbb81f;
 	border-left: 7px solid #3B0101;
 	border-right: 6px solid #3B0101;
  }
@@ -94,10 +93,10 @@ footer
 
 body 
 {
-  background-image:url(https://krot.mobi/uploads/posts/2021-02/1613586043_57-p-vintazhnii-chernii-fon-67.jpg);
+  background-image:url(https://phonoteka.org/uploads/posts/2021-05/1620950932_16-phonoteka_org-p-fon-dlya-khtml-saita-16.jpg);
   font-family: serif, "Times new Roman";
   font-size: 20px;
-  color: red;
+  color: #bbb81f;
 }
 
 
